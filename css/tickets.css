@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: rgb(35, 51, 85);
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.tickets__list-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 50px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.lh-logo {
+    background-image: url("../img/lh.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.lot-logo {
+    background-image: url("../img/lot.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.wizz-logo {
+    background-image: url("../img/wizz.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.ra-logo {
+    background-image: url("../img/ra.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.ticket__text-box {
+    padding-left: 2%;
+}
+
+.tickets__list-item:hover {
+    color: white;
+    background-color: rgb(35, 51, 85);
+    cursor: pointer;
+}
