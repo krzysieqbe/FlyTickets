@@ -18,6 +18,7 @@ body {
     color: rgb(35, 51, 85);
     padding: 3rem;
     box-sizing: border-box;
+    background-color: rgba(234, 241, 245, 0.274);
 }
 
 .tickets__list-item {
@@ -58,12 +59,115 @@ body {
     background-position: top;
 }
 
-.ticket__text-box {
-    padding-left: 2%;
+.af-logo {
+    background-image: url("../img/af.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-.tickets__list-item:hover {
-    color: white;
-    background-color: rgb(35, 51, 85);
-    cursor: pointer;
+.ba-logo {
+    background-image: url("../img/ba.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.klm-logo {
+    background-image: url("../img/klm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.flight__header {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    font-weight: bolder;
+    padding-left: 2rem;
+}
+
+.flights__list-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-color: lightgrey;
+    border-style: solid;
+    border-top-style: none;
+    border-width: 1px;
+    font-size: 1rem;
+}
+
+.date-group {
+    display: inline-block;
+    padding-top: 18rem;
+}
+
+.plane-logo {
+    display: inline-block;
+    font-size: 2.3rem;
+    padding-left: 1.5rem;
+}
+
+.date-group-text {
+    display: inline-block;
+    padding-left: 1.5rem;
+}
+
+.date-text {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.flights__list {
+    display: grid;
+    grid-template-rows: repeat(4, 10rem);
+}
+
+.flight-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    padding-top: 3.5rem;
+}
+
+.flight-radio-btn {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-start {
+    display: inline-block;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+
+.flight-from {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-duration {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-end {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-to {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-logo {
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.flight-price {
+    display: inline-block;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
 }
