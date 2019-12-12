@@ -18,7 +18,7 @@ body {
     color: rgb(35, 51, 85);
     padding: 3rem;
     box-sizing: border-box;
-    background-color: rgba(234, 241, 245, 0.274);
+    /*background-color: rgba(234, 241, 245, 0.274);*/
 }
 
 .tickets__list-item {
@@ -32,7 +32,7 @@ body {
 }
 
 .lh-logo {
-    background-image: url("../img/lh.jpg");
+    background-image: url("../img/lh.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -67,7 +67,7 @@ body {
 }
 
 .ba-logo {
-    background-image: url("../img/ba.png");
+    background-image: url("../img/ba.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -126,39 +126,59 @@ body {
 
 .flight-container {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
     padding-top: 3.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lavender;
 }
 
 .flight-radio-btn {
     display: inline-block;
-    padding-top: 1.5rem;
+    padding-top: .8rem;
 }
 
 .flight-start {
     display: inline-block;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding-top: .9rem;
+    padding-left: 1.3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 .flight-from {
     display: inline-block;
-    padding-top: 1.5rem;
+    padding-top: 1.1rem;
+    padding-left: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .flight-duration {
     display: inline-block;
-    padding-top: 1.5rem;
+    padding-top: 1.1rem;
+    padding-left: 1.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .flight-end {
+    display: inline-block;
+    padding-top: .9rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.flight-info {
     display: inline-block;
     padding-top: 1.5rem;
 }
 
 .flight-to {
     display: inline-block;
-    padding-top: 1.5rem;
+    padding-top: 1.1rem;
+    padding-left: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .flight-logo {
@@ -168,6 +188,23 @@ body {
 
 .flight-price {
     display: inline-block;
-    padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding-top: .9rem;
+    padding-left: 1.3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.select-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(35, 51, 85);
+    color: white;
+    cursor: pointer;
+    padding: .3rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+.select-btn:hover {
+    background-color: rgb(66, 93, 151);
 }
