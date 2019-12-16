@@ -31,6 +31,34 @@ body {
     margin-right: 10rem;
 }
 
+.env-logo {
+    background-image: url("../img/env.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.jb-logo {
+    background-image: url("../img/jb.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.fa-logo {
+    background-image: url("../img/fa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.bxa-logo {
+    background-image: url("../img/bxa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 .lh-logo {
     background-image: url("../img/lh.png");
     background-size: contain;
@@ -126,7 +154,7 @@ body {
 
 .flight-container {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr .3fr .3fr;
     padding-top: 3.5rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
