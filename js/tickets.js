@@ -11,6 +11,13 @@ document.onload = function() {
 
     var data = JSON.parse(localStorage.getItem("ft-data"));
 
+    var selectItem = function(selected) {
+        data.users[userId].selection = selected;
+        data.users[userId].slctDur = selectionDur;
+
+        localStorage.setItem("ft-data", JSON.stringify(data));
+        location = "./endForm.html";
+    }
 
     setTimeout(function() {
         var btn1 = document.getElementById("select-1");
@@ -20,44 +27,29 @@ document.onload = function() {
 
         btn1.onclick = function() {
             var selection = "Frontier Airlines";
-            data.users[userId].selection = selection;
-            data.users[userId].slctDur = selectionDur;
-
-            localStorage.setItem("ft-data", JSON.stringify(data));
-            location = "./endForm.html";
+            selectItem(selection);
 
         };
 
         btn2.onclick = function() {
             var selection = "BX Air";
-            data.users[userId].selection = selection;
-            data.users[userId].slctDur = selectionDur;
-
-            localStorage.setItem("ft-data", JSON.stringify(data));
-            location = "./endForm.html";
+            selectItem(selection);
 
         };
 
         btn3.onclick = function() {
             var selection = "Envoy";
-            data.users[userId].selection = selection;
-            data.users[userId].slctDur = selectionDur;
-
-            localStorage.setItem("ft-data", JSON.stringify(data));
-            location = "./endForm.html";
+            selectItem(selection);
 
         };
 
         btn4.onclick = function() {
             var selection = "Jet Blue";
-            data.users[userId].selection = selection;
-            data.users[userId].slctDur = selectionDur;
-
-            localStorage.setItem("ft-data", JSON.stringify(data));
-            location = "./endForm.html";
+            selectItem(selection);
 
         };
     }, 500);
+
 
 
 
