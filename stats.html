@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>Fly Tickets - Stats</title>
+
+</head>
+
+<body>
+    <h1>Dane</h1>
+    <div class="reset-btn" id="reset-btn">Resetuj Dane</div>
+    <div id="stats-grid" class="data-grid">
+        <div class="data-grid-header">
+            <div>Id</div>
+            <div>Nazwa</div>
+            <div>Wiek</div>
+            <div>Zawód</div>
+            <div>Grupa</div>
+            <div>Wybór</div>
+            <div>Czas wyboru [s]</div>
+        </div>
+    </div>
+    <div id="confirm-modal" class="confirm-modal">
+        <div class="confrim-modal-content">
+            <div class="confrim-top-bar">
+                <h1 class="confirm-header">Czy na pewno chcesz zresetować wszystkie dane ? </h1>
+            </div>
+            <div class="reset-btn" id="confirm-btn">Resetuj Dane</div>
+            <div class="reset-btn" id="abort-btn">Anuluj</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/stats.js"></script>
+
+</html>

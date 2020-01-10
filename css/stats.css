@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: rgb(35, 51, 85);
+    padding: 3rem;
+    box-sizing: border-box;
+    /*background-color: rgba(234, 241, 245, 0.274);*/
+}
+
+.data-grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.data-grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    font-size: 1.2rem;
+}
+
+.reset-btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(35, 51, 85);
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+    width: 10rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.reset-btn:hover {
+    background-color: rgb(66, 93, 151);
+}
+
+.confirm-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.confrim-modal-content {
+    background-color: #fefefe;
+    margin: 4rem auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}

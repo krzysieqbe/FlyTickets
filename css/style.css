@@ -269,6 +269,16 @@ body {
     /* Black w/ opacity */
 }
 
+.form__modal--content {
+    background-color: #fefefe;
+    margin: 4rem auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
 .plane-crash-img {
     background-image: url("../img/planecrash.png");
     background-size: contain;
@@ -276,4 +286,60 @@ body {
     background-position: center;
     height: 25rem;
     width: 45rem;
+}
+
+.next__btn {
+    cursor: pointer;
+    background-color: rgb(35, 51, 85);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    color: white;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 1rem;
+    text-align: center;
+    margin-left: 43%;
+    margin-right: 43%;
+}
+
+.next__btn:hover {
+    background-color: rgb(66, 93, 151);
+}
+
+.form {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 1.6rem .8rem;
+    margin: .8rem 0;
+    display: inline-block;
+    border: .1rem solid #ccc;
+    border-radius: .8rem;
+    box-sizing: border-box;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
 }

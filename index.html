@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
     <title>Fly Tickets</title>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <span class="heading-primary--sub">tickets</span>
             </h1>
 
-            <a href="#clicked" id="button-enter" class="btn btn--white btn--animated">Wchodzę</a>
+            <a href="#info" id="button-enter" class="btn btn--white btn--animated">Wchodzę</a>
         </div>
     </header>
 
@@ -49,6 +49,7 @@
                 </br>
                 <div style="padding-left: 60%;">Alex Johnson, Chicago</div>
                 <div class="plane-crash-img"></div>
+                <div id="next-btn" class="next__btn">Dalej</div>
             </div>
         </div>
     </div>
@@ -59,10 +60,20 @@
                 <h1 class="form__header">Podaj swoje dane</h1>
             </div>
 
+
             <div class="form--content">
-                <div></div>
+                <div class="form">
+                    <label for="form-name">Imię</label>
+                    <input name="name" id="form-name" placeholder="Jak masz na imię?">
+                    <label for="form-age">Wiek</label>
+                    <input name="age" id="form-age" placeholder="Ile masz lat?" type="number">
+                    <label for="form-job">Zawód</label>
+                    <input name="job" id="form-job" placeholder="Czym się zajmujesz ?">
+                </div>
+                <div id="form-next-btn" class="next__btn">Dalej</div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
