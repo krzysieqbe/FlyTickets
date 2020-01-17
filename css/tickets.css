@@ -25,8 +25,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 50px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     margin-left: 10rem;
     margin-right: 10rem;
 }
@@ -35,7 +35,7 @@ body {
     background-image: url("../img/env.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 .jb-logo {
@@ -43,27 +43,28 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 30%;
+    background-position: center;
 }
 
 .fa-logo {
     background-image: url("../img/fa.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 .bxa-logo {
     background-image: url("../img/bxa.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 .lh-logo {
     background-image: url("../img/lh.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 .lot-logo {
@@ -149,7 +150,7 @@ body {
 
 .flights__list {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, .7fr);
 }
 
 .flight-container {
