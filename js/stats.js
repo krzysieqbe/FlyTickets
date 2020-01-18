@@ -8,7 +8,10 @@ document.onload = function() {
         var data = JSON.parse(localStorage.getItem("ft-data")) || initData;
         var gridDom = document.getElementById("stats-grid");
         var resetBtn = document.getElementById("reset-btn");
-
+        var downloadBtn = document.getElementById("download-btn");
+        var csvArray = [
+            ["id", "nazwa", "wiek", "zawód", "grupa", "wybor", "czas wyboru"]
+        ];
 
         data.users.forEach(function(user) {
             var id = user.id;
@@ -18,7 +21,16 @@ document.onload = function() {
             var grp = user.grp;
             var slct = user.selection || "N/A"
             var slctDur = user.slctDur || "N/A"
+            var csvRow = [];
 
+            csvRow.push(id);
+            csvRow.push(name);
+            csvRow.push(age);
+            csvRow.push(job);
+            csvRow.push(grp);
+            csvRow.push(slctDur);
+
+            csvArray.push(csvRow);
 
             var newRow = '<div class="data-grid-row">';
             newRow += '<div>' + id + '</div>';
@@ -35,8 +47,20 @@ document.onload = function() {
 
 
         });
+
+        downloadBtn.onclick = function() {
+
+            let csvContent = "data:text/csv;charset=utf-8,";
+
+            csvArray.forEach(function(rowArray) {
+                let row = rowArray.join(",");
+                csvContent += row + "\r\n";
+            });
+            var encodedUri = encodeURI(csvContent);
+            window.open(encodedUri);
+        };
+
         resetBtn.onclick = function() {
-            console.log("dupa");
             var modal = document.getElementById("confirm-modal");
             modal.style.display = "block";
             var confirmBtn = document.getElementById("confirm-btn");

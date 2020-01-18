@@ -39,7 +39,7 @@ body {
     font-size: 1.2rem;
 }
 
-.reset-btn {
+.btn {
     display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
@@ -55,7 +55,7 @@ body {
     text-align: center;
 }
 
-.reset-btn:hover {
+.btn:hover {
     background-color: rgb(66, 93, 151);
 }
 
