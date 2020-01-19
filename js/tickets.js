@@ -13,7 +13,7 @@ document.onload = function() {
 
     var selectItem = function(selected) {
         data.users[userId].selection = selected;
-        data.users[userId].slctDur = selectionDur;
+        data.users[userId].slctDur = Math.round(selectionDur);
 
         localStorage.setItem("ft-data", JSON.stringify(data));
         location = "./endForm.html";

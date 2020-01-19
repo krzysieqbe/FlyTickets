@@ -28,6 +28,7 @@ document.onload = function() {
             csvRow.push(age);
             csvRow.push(job);
             csvRow.push(grp);
+            csvRow.push(slct);
             csvRow.push(slctDur);
 
             csvArray.push(csvRow);
@@ -53,11 +54,20 @@ document.onload = function() {
             let csvContent = "data:text/csv;charset=utf-8,";
 
             csvArray.forEach(function(rowArray) {
-                let row = rowArray.join(",");
+                let row = rowArray.join(";");
                 csvContent += row + "\r\n";
             });
+            //var encodedUri = encodeURI(csvContent);
+            //window.open(encodedUri);
             var encodedUri = encodeURI(csvContent);
-            window.open(encodedUri);
+            var link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "data.csv");
+            document.body.appendChild(link); // Required for FF
+
+            link.click(); // This will download the data file named "my_data.csv".
+
+            link.remove();
         };
 
         resetBtn.onclick = function() {
